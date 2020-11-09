@@ -12,7 +12,7 @@ this.vel=createVector(random(-0.001,0.001),random(-0.01,0.01),random(-0.01,0.01)
 //random acceleration for each particle
 this.force=createVector(random(-0.001,0.001),random(-0.001,0.001),random(-0.001,0.001))
 //random radius for each particle
-this.r=random(20)
+this.r=random(2,height*0.02)
 }
 //rendering  particle as sphere with random radius
 show(){
@@ -48,11 +48,11 @@ if(this.pos.y<=-height/2){
 
   this.pos.mult(0)
 }
-if(this.pos.z<=-1000){
+if(this.pos.z<=-3000){
   
   this.pos.mult(0)
 }
-if(this.pos.z>=1000){
+if(this.pos.z>=3000){
   
  this.pos.mult(0)
 }
@@ -80,6 +80,7 @@ if(this.pos.z>=1000){
 //defining the number of particle
 let particles_size=500
 let x=0
+let p
 //array to store all particles
 let particles=[]
 //array to store all texture images
@@ -105,8 +106,13 @@ function preload(){
   image.push(img7)
   img8 = loadImage('texture/neptune.jpg');
   image.push(img8)
+ img9 = loadImage('texture/sun.jpg');
+  image.push(img9)
+  img10 = loadImage('texture/pluto.jpg');
+ image.push(img10)
+ img11 = loadImage('texture/bennu.jpg');
+ image.push(img11)
 }
-
 
 function setup() {
    
@@ -123,19 +129,21 @@ for (let i=0;i<particles_size;i++){
 
 function draw() {
   
+
+  
  //set canvas background color 
 background(0)
 //looping through all particles and images texture
   for (let i=0;i<particles_size;i++){
    
 //map image array size to particle array size    
-   let index=map(i,0,particles_size,0,7)
+   let index=map(i,0,particles_size,0,image.length)
     texture(image[floor(index)])
     particle[i].show();
-    particle[i].move(random(2,5));
+    particle[i].move(random(3,6));
     particle[i].check_edges();
    
-    
+  
 
 
   }
