@@ -80,7 +80,7 @@ if(this.pos.z>=3000){
 //defining the number of particle
 let particles_size=500
 let x=0
-let p
+
 //array to store all particles
 let particles=[]
 //array to store all texture images
