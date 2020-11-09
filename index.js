@@ -89,21 +89,21 @@ let image=[]
 //preload all planet skin textures as images and adding them to image array
 function preload(){
 
-  img1 = loadImage('neptune.jpg');
+  img1 = loadImage('https://user-images.githubusercontent.com/59300940/98502724-2ff69b80-21ff-11eb-9a89-afe3db65bef3.jpg');
   image.push(img1)
-  img2 = loadImage('mars.jpg');
+  img2 = loadImage('https://user-images.githubusercontent.com/59300940/98502711-2c631480-21ff-11eb-9e3e-5e86f2468e3d.jpg');
   image.push(img2)
-  img3 = loadImage('venus.jpg');
+  img3 = loadImage('https://user-images.githubusercontent.com/59300940/98502729-3258f580-21ff-11eb-8cc2-15b402dbdfb8.jpg');
   image.push(img3)
-  img4 = loadImage('earth.jpg');
+  img4 = loadImage('https://user-images.githubusercontent.com/59300940/98502700-279e6080-21ff-11eb-8034-c64a47246ee0.jpg');
   image.push(img4)
-  img5 = loadImage('jupiter.jpg');
+  img5 = loadImage('https://user-images.githubusercontent.com/59300940/98502707-2a995100-21ff-11eb-9208-2c73dfddff23.jpg');
   image.push(img5)
-  img6 = loadImage('saturn.jpg');
+  img6 = loadImage('https://user-images.githubusercontent.com/59300940/98502732-35ec7c80-21ff-11eb-93fc-77cfa006cf8d.jpg');
   image.push(img6)
-  img7 = loadImage('uranus.jpg');
+  img7 = loadImage('https://user-images.githubusercontent.com/59300940/98502738-384ed680-21ff-11eb-80bd-a8111aba926c.jpg');
   image.push(img7)
-  img8 = loadImage('mercury.jpg');
+  img8 = loadImage('https://user-images.githubusercontent.com/59300940/98502713-2e2cd800-21ff-11eb-8f28-d750344b99dc.jpg');
   image.push(img8)
 }
 
